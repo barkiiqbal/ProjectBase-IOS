@@ -13,11 +13,11 @@ class UserCoordinator: NSObject {
     class func validateUser(username:String, password:String, completion:@escaping (User) -> Void, failer:@escaping(Error) -> Void) {
         
         let loginURL = APPURL.login()
-        let header:[String:String] = ["Content-Type":"application/json"]
         let param = ["email": "peter@klaven",
                     "password": "cityslicka"
                     ]
-        NetworkCoordinator.doRequest(url: loginURL, requestMethod: .post, param: param, header: header) { (httpResponse, json, error) in
+        
+        NetworkCoordinator.doRequest(url: loginURL, requestMethod: .post, param: param, header: nil) { (httpResponse, json, error) in
             DPrint(httpResponse)
             DPrint(json)
             DPrint(error)
@@ -30,6 +30,27 @@ class UserCoordinator: NSObject {
             let user = User(JSON: [:])!
             completion(user)
         }
+    }
+    
+    class func forgetPassword(username:String, completion:@escaping (User) -> Void, failer:@escaping(Error) -> Void) {
         
+        let loginURL = APPURL.login()
+        let param = ["email": "peter@klaven",
+                     "password": "cityslicka"
+        ]
+        
+        NetworkCoordinator.doRequest(url: loginURL, requestMethod: .post, param: param, header: nil) { (httpResponse, json, error) in
+            DPrint(httpResponse)
+            DPrint(json)
+            DPrint(error)
+            
+            guard error == nil else {
+                failer(error!)
+                return
+            }
+            
+            let user = User(JSON: [:])!
+            completion(user)
+        }
     }
 }

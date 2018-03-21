@@ -8,16 +8,22 @@
 
 import UIKit
 
-class LoginController: UIViewController {
+class LoginViewController: BaseViewController {
 
+    //MARK: - IBOutlet
+    
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtUsername: UITextField!
-    
     @IBOutlet weak var btnLogin: UIButton!
+    
+    
+    //MARK: - Controller Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        designView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,7 +31,7 @@ class LoginController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
 
@@ -36,10 +42,19 @@ class LoginController: UIViewController {
     }
     */
 
+    
+    //MARK: - Private
+    
+    private func designView() {
+        
+        shouldHideNavigationBar = true
+        view.backgroundColor = AppColor.appBackgroundColor
+        
+    }
+    
+    //MARK: - IBAction
+    
     @IBAction func login(_ sender: Any) {
-
-
-
         UserCoordinator.validateUser(username: txtUsername.text!, password: txtPassword.text!, completion: { (user) in
             print("response \(user)")
         }, failer: { (error) in

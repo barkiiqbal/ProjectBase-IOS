@@ -9,7 +9,21 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-
+    
+    /*
+     hide navigation bar depending on the value
+     */
+    private var _shouldHideNavigationBar:Bool = false
+    public var shouldHideNavigationBar:Bool  {
+        get {
+            return _shouldHideNavigationBar;
+        }
+        set {
+            _shouldHideNavigationBar = newValue
+            navigationController?.navigationBar.isHidden = _shouldHideNavigationBar
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +35,20 @@ class BaseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // hide navigation bar if visible
+        if shouldHideNavigationBar != navigationController?.navigationBar.isHidden ?? false {
+            shouldHideNavigationBar = _shouldHideNavigationBar;
+        }
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.navigationBar.isHidden = false
+    }
 
     /*
     // MARK: - Navigation
@@ -33,3 +61,30 @@ class BaseViewController: UIViewController {
     */
 
 }
+
+
+//protocol HideNaviationBar {
+//    var shouldShowNavigationBar:Bool {
+//        get {
+//        return navigationController?.navigationBar.isHidden ?? true
+//        }
+//        
+//        set{
+//        navigationController?.navigationBar.isHidden = shouldShowNavigationBar
+//        }
+//    }
+//}
+
+//extension HideNaviationBar {
+//
+//    var shouldShowNavigationBar:Bool {
+//        get {
+//            return navigationController?.navigationBar.isHidden ?? true
+//        }
+//
+//        set{
+//            navigationController?.navigationBar.isHidden = shouldShowNavigationBar
+//        }
+//    }
+//}
+
