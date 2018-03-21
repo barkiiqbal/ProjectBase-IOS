@@ -10,6 +10,10 @@ import UIKit
 
 class ForgetPasswordViewController: UIViewController {
 
+    //MARK: - IBOutlet
+    @IBOutlet weak var txtUsername: UITextField!
+    
+    //MARK: - Controller Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,4 +36,14 @@ class ForgetPasswordViewController: UIViewController {
     }
     */
 
+    
+    //MARK: - IBAction
+    
+    @IBAction func forgetPassword(_ sender: Any) {
+        UserCoordinator.forgetPassword(username: txtUsername.text!, completion: { (user) in
+            print("response \(user)")
+        }, failer: { (error) in
+            print("response \(error)")
+        })
+    }
 }
