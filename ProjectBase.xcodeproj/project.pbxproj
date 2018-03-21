@@ -10,23 +10,27 @@
 		6CE8778498875338D11BDE9D /* Pods_ProjectBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBF910C7A603EC7C35DFF7E /* Pods_ProjectBase.framework */; };
 		71017E45203B02EB003CFBE5 /* UserCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71017E44203B02EB003CFBE5 /* UserCoordinator.swift */; };
 		71017E46203B02EB003CFBE5 /* UserCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71017E44203B02EB003CFBE5 /* UserCoordinator.swift */; };
-		71254399203C50D900194098 /* UserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71254398203C50D900194098 /* UserHelper.swift */; };
-		7125439A203C50D900194098 /* UserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71254398203C50D900194098 /* UserHelper.swift */; };
-		7177D22520234DAE007D811F /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177D22420234DAE007D811F /* UserServices.swift */; };
-		7177D22620234DAE007D811F /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177D22420234DAE007D811F /* UserServices.swift */; };
+		71254399203C50D900194098 /* UserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71254398203C50D900194098 /* UserSessionManager.swift */; };
+		7125439A203C50D900194098 /* UserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71254398203C50D900194098 /* UserSessionManager.swift */; };
+		71315C3820623B1700D68750 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71315C3720623B1700D68750 /* ForgetPasswordViewController.swift */; };
+		71315C3920623B1700D68750 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71315C3720623B1700D68750 /* ForgetPasswordViewController.swift */; };
+		71315C3B20623F4700D68750 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71315C3A20623F4700D68750 /* ColorConstants.swift */; };
+		71315C3C20623F4700D68750 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71315C3A20623F4700D68750 /* ColorConstants.swift */; };
+		71541332206237380081C37A /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71541331206237380081C37A /* NetworkConstants.swift */; };
+		71541333206237380081C37A /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71541331206237380081C37A /* NetworkConstants.swift */; };
+		71541335206238480081C37A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71541334206238480081C37A /* BaseViewController.swift */; };
+		71541336206238480081C37A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71541334206238480081C37A /* BaseViewController.swift */; };
 		7177D22820234FD3007D811F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177D22720234FD3007D811F /* User.swift */; };
 		7177D22920234FD3007D811F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177D22720234FD3007D811F /* User.swift */; };
 		71D5D0CC2019995B00070C98 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D5D0CB2019995B00070C98 /* Helpers.swift */; };
 		71D5D0CD2019995B00070C98 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D5D0CB2019995B00070C98 /* Helpers.swift */; };
-		71D734AD20184C52003160D3 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D734AC20184C52003160D3 /* LoginController.swift */; };
-		71D734AE20184C52003160D3 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D734AC20184C52003160D3 /* LoginController.swift */; };
+		71D734AD20184C52003160D3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D734AC20184C52003160D3 /* LoginViewController.swift */; };
+		71D734AE20184C52003160D3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D734AC20184C52003160D3 /* LoginViewController.swift */; };
 		71FF58862017148F004CFB61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FF58852017148F004CFB61 /* AppDelegate.swift */; };
-		71FF58882017148F004CFB61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FF58872017148F004CFB61 /* ViewController.swift */; };
 		71FF588B2017148F004CFB61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FF58892017148F004CFB61 /* Main.storyboard */; };
 		71FF588E2017148F004CFB61 /* ProjectBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71FF588C2017148F004CFB61 /* ProjectBase.xcdatamodeld */; };
 		71FF58902017148F004CFB61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71FF588F2017148F004CFB61 /* Assets.xcassets */; };
 		71FF58932017148F004CFB61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71FF58912017148F004CFB61 /* LaunchScreen.storyboard */; };
-		71FF58AE20171871004CFB61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FF58872017148F004CFB61 /* ViewController.swift */; };
 		71FF58AF20171871004CFB61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FF58852017148F004CFB61 /* AppDelegate.swift */; };
 		71FF58B020171871004CFB61 /* ProjectBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71FF588C2017148F004CFB61 /* ProjectBase.xcdatamodeld */; };
 		71FF58B220171871004CFB61 /* Pods_ProjectBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBF910C7A603EC7C35DFF7E /* Pods_ProjectBase.framework */; };
@@ -46,14 +50,16 @@
 		1FBF910C7A603EC7C35DFF7E /* Pods_ProjectBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		474535B695F27736A56A4605 /* Pods_ProjectBase_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectBase_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71017E44203B02EB003CFBE5 /* UserCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCoordinator.swift; sourceTree = "<group>"; };
-		71254398203C50D900194098 /* UserHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHelper.swift; sourceTree = "<group>"; };
-		7177D22420234DAE007D811F /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
+		71254398203C50D900194098 /* UserSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionManager.swift; sourceTree = "<group>"; };
+		71315C3720623B1700D68750 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		71315C3A20623F4700D68750 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		71541331206237380081C37A /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		71541334206238480081C37A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7177D22720234FD3007D811F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		71D5D0CB2019995B00070C98 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		71D734AC20184C52003160D3 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		71D734AC20184C52003160D3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		71FF58822017148F004CFB61 /* ProjectBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71FF58852017148F004CFB61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71FF58872017148F004CFB61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		71FF588A2017148F004CFB61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71FF588D2017148F004CFB61 /* ProjectBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjectBase.xcdatamodel; sourceTree = "<group>"; };
 		71FF588F2017148F004CFB61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +109,7 @@
 		7177D220202349E9007D811F /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				71FF58BE201719D9004CFB61 /* AppDelegateCoordinator.swift */,
 				71017E44203B02EB003CFBE5 /* UserCoordinator.swift */,
 			);
 			path = Coordinators;
@@ -112,29 +119,15 @@
 			isa = PBXGroup;
 			children = (
 				71FF58C220171E45004CFB61 /* NetworkCoordinator.swift */,
+				71254398203C50D900194098 /* UserSessionManager.swift */,
 			);
 			path = Managers;
-			sourceTree = "<group>";
-		};
-		7177D22220234D58007D811F /* Infrastructure layer  */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Infrastructure layer ";
-			sourceTree = "<group>";
-		};
-		7177D22320234D7C007D811F /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		71D5D0CA2019994B00070C98 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
 				71D5D0CB2019995B00070C98 /* Helpers.swift */,
-				71254398203C50D900194098 /* UserHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -162,7 +155,6 @@
 		71FF58842017148F004CFB61 /* ProjectBase */ = {
 			isa = PBXGroup;
 			children = (
-				7177D22220234D58007D811F /* Infrastructure layer  */,
 				71FF58A1201715DA004CFB61 /* App Delegate */,
 				7177D22120234C43007D811F /* Managers */,
 				7177D220202349E9007D811F /* Coordinators */,
@@ -170,7 +162,6 @@
 				71FF58A6201716C7004CFB61 /* Utilities */,
 				71FF589A20171558004CFB61 /* Controllers */,
 				71FF58A92017170F004CFB61 /* Libraries */,
-				71FF58A8201716F8004CFB61 /* Services */,
 				71FF589E20171575004CFB61 /* Resources */,
 				71FF58A0201715C5004CFB61 /* Supporting Files */,
 				71FF589C20171569004CFB61 /* Views */,
@@ -183,8 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				71FF58AA20171723004CFB61 /* BaseController */,
-				71FF58872017148F004CFB61 /* ViewController.swift */,
-				71D734AC20184C52003160D3 /* LoginController.swift */,
+				71D734AC20184C52003160D3 /* LoginViewController.swift */,
+				71315C3720623B1700D68750 /* ForgetPasswordViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -275,7 +266,6 @@
 			isa = PBXGroup;
 			children = (
 				71D5D0CA2019994B00070C98 /* Helper */,
-				71FF58C120171B45004CFB61 /* Coordinator */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -284,17 +274,10 @@
 			isa = PBXGroup;
 			children = (
 				71FF58C5201720DF004CFB61 /* Constants.swift */,
+				71541331206237380081C37A /* NetworkConstants.swift */,
+				71315C3A20623F4700D68750 /* ColorConstants.swift */,
 			);
 			path = Constants;
-			sourceTree = "<group>";
-		};
-		71FF58A8201716F8004CFB61 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				7177D22320234D7C007D811F /* New Group */,
-				7177D22420234DAE007D811F /* UserServices.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		71FF58A92017170F004CFB61 /* Libraries */ = {
@@ -307,16 +290,9 @@
 		71FF58AA20171723004CFB61 /* BaseController */ = {
 			isa = PBXGroup;
 			children = (
+				71541334206238480081C37A /* BaseViewController.swift */,
 			);
 			path = BaseController;
-			sourceTree = "<group>";
-		};
-		71FF58C120171B45004CFB61 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				71FF58BE201719D9004CFB61 /* AppDelegateCoordinator.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		82122E6EFC40FAA06494F335 /* Pods */ = {
@@ -556,18 +532,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71FF58882017148F004CFB61 /* ViewController.swift in Sources */,
-				7177D22520234DAE007D811F /* UserServices.swift in Sources */,
-				71254399203C50D900194098 /* UserHelper.swift in Sources */,
+				71541332206237380081C37A /* NetworkConstants.swift in Sources */,
+				71254399203C50D900194098 /* UserSessionManager.swift in Sources */,
 				71FF58C320171E45004CFB61 /* NetworkCoordinator.swift in Sources */,
+				71315C3B20623F4700D68750 /* ColorConstants.swift in Sources */,
+				71541335206238480081C37A /* BaseViewController.swift in Sources */,
 				71017E45203B02EB003CFBE5 /* UserCoordinator.swift in Sources */,
 				71FF58862017148F004CFB61 /* AppDelegate.swift in Sources */,
 				71D5D0CC2019995B00070C98 /* Helpers.swift in Sources */,
+				71315C3820623B1700D68750 /* ForgetPasswordViewController.swift in Sources */,
 				71FF588E2017148F004CFB61 /* ProjectBase.xcdatamodeld in Sources */,
 				71FF58BF201719D9004CFB61 /* AppDelegateCoordinator.swift in Sources */,
 				71FF58C6201720DF004CFB61 /* Constants.swift in Sources */,
 				7177D22820234FD3007D811F /* User.swift in Sources */,
-				71D734AD20184C52003160D3 /* LoginController.swift in Sources */,
+				71D734AD20184C52003160D3 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,18 +553,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71FF58AE20171871004CFB61 /* ViewController.swift in Sources */,
-				7177D22620234DAE007D811F /* UserServices.swift in Sources */,
-				7125439A203C50D900194098 /* UserHelper.swift in Sources */,
+				71541333206237380081C37A /* NetworkConstants.swift in Sources */,
+				7125439A203C50D900194098 /* UserSessionManager.swift in Sources */,
 				71FF58C420171E45004CFB61 /* NetworkCoordinator.swift in Sources */,
+				71315C3C20623F4700D68750 /* ColorConstants.swift in Sources */,
+				71541336206238480081C37A /* BaseViewController.swift in Sources */,
 				71017E46203B02EB003CFBE5 /* UserCoordinator.swift in Sources */,
 				71FF58AF20171871004CFB61 /* AppDelegate.swift in Sources */,
 				71D5D0CD2019995B00070C98 /* Helpers.swift in Sources */,
+				71315C3920623B1700D68750 /* ForgetPasswordViewController.swift in Sources */,
 				71FF58B020171871004CFB61 /* ProjectBase.xcdatamodeld in Sources */,
 				71FF58C0201719D9004CFB61 /* AppDelegateCoordinator.swift in Sources */,
 				71FF58C7201720DF004CFB61 /* Constants.swift in Sources */,
 				7177D22920234FD3007D811F /* User.swift in Sources */,
-				71D734AE20184C52003160D3 /* LoginController.swift in Sources */,
+				71D734AE20184C52003160D3 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
