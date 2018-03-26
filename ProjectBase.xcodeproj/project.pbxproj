@@ -81,7 +81,6 @@
 		71FF58922017148F004CFB61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71FF58942017148F004CFB61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71FF58BC20171871004CFB61 /* ProjectBase-Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjectBase-Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		71FF58BD20171871004CFB61 /* ProjectBase copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ProjectBase copy-Info.plist"; path = "/Users/motivator/Desktop/ProjectBase/ProjectBase copy-Info.plist"; sourceTree = "<absolute>"; };
 		71FF58BE201719D9004CFB61 /* AppDelegateCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateCoordinator.swift; sourceTree = "<group>"; };
 		71FF58C220171E45004CFB61 /* NetworkCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCoordinator.swift; sourceTree = "<group>"; };
 		71FF58C5201720DF004CFB61 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -156,7 +155,6 @@
 				71FF58832017148F004CFB61 /* Products */,
 				82122E6EFC40FAA06494F335 /* Pods */,
 				29EB3F9E6B5A20D9B3F0F842 /* Frameworks */,
-				71FF58BD20171871004CFB61 /* ProjectBase copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -731,7 +729,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "ProjectBase/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sdf.ProjectBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -746,7 +744,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "ProjectBase/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sdf.ProjectBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -761,7 +759,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "ProjectBase/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DDev";
 				PRODUCT_BUNDLE_IDENTIFIER = sdf.ProjectBase;
@@ -777,7 +775,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "ProjectBase/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DDev";
 				PRODUCT_BUNDLE_IDENTIFIER = sdf.ProjectBase;
