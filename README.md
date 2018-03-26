@@ -7,7 +7,7 @@ Quick Start for Swift 4.0 Base project
 	1.	Change Name of Main Directory
 	2.	Open “ProjectBase.xcodeproj”.
 	3.	In Project Navigator. Double Click on Blue "ProjectBase" and rename it.
-  4.  On Changing Project name Xcode will show Confirmation Pop up. Select Rename
+	4.	On Changing Project name Xcode will show Confirmation Pop up. Select Rename
 	5.	In Project -> General  delete old pod frameworks from Linked Frameworks and Libraries.
 	6.	Delete old scheme from Manage schema.	
 	7.	Select Base Folder After Project Name and rename it too.
