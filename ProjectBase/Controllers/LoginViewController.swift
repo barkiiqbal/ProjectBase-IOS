@@ -59,8 +59,10 @@ class LoginViewController: BaseViewController {
     //MARK: - IBAction
     
     @IBAction func login(_ sender: Any) {
+        showWaitView(text: "Login... Please wait", view: view)
         UserCoordinator.validateUser(username: txtUsername.text!, password: txtPassword.text!, completion: { (user) in
             print("response \(user)")
+            self.hideWaitView(view: self.view)
             showHomeScreen()
             
         }, failer: { (error) in

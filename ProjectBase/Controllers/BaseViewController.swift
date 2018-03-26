@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MBProgressHUD
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIViewController, WaitView {
     
     /*
      hide navigation bar depending on the value
@@ -61,30 +62,4 @@ class BaseViewController: UIViewController {
     */
 
 }
-
-
-//protocol HideNaviationBar {
-//    var shouldShowNavigationBar:Bool {
-//        get {
-//        return navigationController?.navigationBar.isHidden ?? true
-//        }
-//        
-//        set{
-//        navigationController?.navigationBar.isHidden = shouldShowNavigationBar
-//        }
-//    }
-//}
-
-//extension HideNaviationBar {
-//
-//    var shouldShowNavigationBar:Bool {
-//        get {
-//            return navigationController?.navigationBar.isHidden ?? true
-//        }
-//
-//        set{
-//            navigationController?.navigationBar.isHidden = shouldShowNavigationBar
-//        }
-//    }
-//}
 

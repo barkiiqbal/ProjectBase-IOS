@@ -11,7 +11,7 @@ import UIKit
 
 func showLoginScreen() {
     let appdelegate = UIApplication.shared.delegate as! AppDelegate
-    let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    let mainStoryboard: UIStoryboard = UIStoryboard(name: "Login", bundle: nil)
     let nav = mainStoryboard.instantiateViewController(withIdentifier: "LoginNavigation")
     
     UIView.transition(with: appdelegate.window!, duration: 0.5, options: UIViewAnimationOptions.transitionFlipFromRight, animations: {
