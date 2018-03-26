@@ -24,6 +24,7 @@ class NetworkCoordinator: NSObject {
         case connect = "CONNECT"
     }
     
+    
     //MARK: - Data response to SwiftJSON
     
     class func convertResponseToSwiftJson(dataResponse: DataResponse<Any>) -> JSON {
@@ -37,6 +38,7 @@ class NetworkCoordinator: NSObject {
         return json
     }
     
+    
     //MARK: - Request Methods
     
     class func doRequest(url:String, requestMethod:RequestMethod, param:[String:Any]? , header:[String:String]?, completion:@escaping (HTTPURLResponse?,JSON?,Error?) -> Void) {
@@ -47,19 +49,19 @@ class NetworkCoordinator: NSObject {
             return;
         }
         
-        let beforeDate = Date()
-        Alamofire.request(url, method: method!, parameters: param, encoding: JSONEncoding.default , headers: header).responseJSON { (response) in
-            let afterDate = Date()
-            DPrint("Response Time = \(afterDate.timeIntervalSince(beforeDate))")
+        let manager = UserSessionManager.shared().manager
+        manager.request(url, method: method!, parameters: param, encoding: JSONEncoding.default , headers: header).responseJSON { (response) in
+            
             switch response.result {
             case .success:
-                let json = NetworkCoordinator.convertResponseToSwiftJson(dataResponse: response)
+            
                 if response.response?.statusCode == 403 {
                     DPrint("Sesstion expired \(url)")
                     NotificationCenter.default.post(name: NSNotification.Name.init("tokenExpired"), object: nil)
                     //                    completion(json,nil)
                     
                 }
+                let json = NetworkCoordinator.convertResponseToSwiftJson(dataResponse: response)
                 completion(response.response,json,nil)
                 
             case .failure(let error):
@@ -76,12 +78,13 @@ class NetworkCoordinator: NSObject {
             print("-------- Error, cannot convert RequestMethod to HTTPMethod");
             return;
         }
-        Alamofire.request(url, method: method!, parameters: param, encoding: JSONEncoding.default, headers: header).responseString(completionHandler:{ (response) in
+        let manager = UserSessionManager.shared().manager
+        manager.request(url, method: method!, parameters: param, encoding: JSONEncoding.default, headers: header).responseString(completionHandler:{ (response) in
             //            self.slideMenuController()?.openLeft()
             
             print(response)
             
-            completion(response.response,response.result as? String ?? "",nil)
+            completion(response.response,(response.result as? String ?? "") ,nil)
         })
     }
     
@@ -94,7 +97,8 @@ class NetworkCoordinator: NSObject {
             return;
         }
         
-        Alamofire.upload(multipartFormData: { (formData) in
+        let manager = UserSessionManager.shared().manager
+        manager.upload(multipartFormData: { (formData) in
             
             //setting normal params
             for (key, value) in param {
