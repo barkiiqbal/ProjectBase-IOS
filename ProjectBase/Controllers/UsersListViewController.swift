@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UsersListViewController: UIViewController {
+class UsersListViewController: BaseViewController {
 
     //MARK: - IBOutlet
     
@@ -26,6 +26,10 @@ class UsersListViewController: UIViewController {
         lblToken.text = UserSessionManager.shared().session!.token ?? "Not Found Error"
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        showToastMessage(text: "Welcome back!", view: view)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

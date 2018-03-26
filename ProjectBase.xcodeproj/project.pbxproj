@@ -24,6 +24,8 @@
 		713F88622068FC3300CA5E5A /* DefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F88602068FC3300CA5E5A /* DefaultManager.swift */; };
 		713F8864206900CE00CA5E5A /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F8863206900CE00CA5E5A /* NavigationHelper.swift */; };
 		713F8865206900CE00CA5E5A /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F8863206900CE00CA5E5A /* NavigationHelper.swift */; };
+		713F88672069187000CA5E5A /* WaitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F88662069187000CA5E5A /* WaitView.swift */; };
+		713F88682069187000CA5E5A /* WaitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F88662069187000CA5E5A /* WaitView.swift */; };
 		71541332206237380081C37A /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71541331206237380081C37A /* NetworkConstants.swift */; };
 		71541333206237380081C37A /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71541331206237380081C37A /* NetworkConstants.swift */; };
 		71541335206238480081C37A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71541334206238480081C37A /* BaseViewController.swift */; };
@@ -65,6 +67,7 @@
 		713F885D2068DDEB00CA5E5A /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
 		713F88602068FC3300CA5E5A /* DefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultManager.swift; sourceTree = "<group>"; };
 		713F8863206900CE00CA5E5A /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
+		713F88662069187000CA5E5A /* WaitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitView.swift; sourceTree = "<group>"; };
 		71541331206237380081C37A /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		71541334206238480081C37A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7177D22720234FD3007D811F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -174,12 +177,12 @@
 				7177D220202349E9007D811F /* Coordinators */,
 				71FF58A7201716E1004CFB61 /* Constants */,
 				71FF58A6201716C7004CFB61 /* Utilities */,
-				71FF589A20171558004CFB61 /* Controllers */,
-				71FF58A92017170F004CFB61 /* Libraries */,
-				71FF589E20171575004CFB61 /* Resources */,
-				71FF58A0201715C5004CFB61 /* Supporting Files */,
 				71FF589C20171569004CFB61 /* Views */,
+				71FF589A20171558004CFB61 /* Controllers */,
 				71FF589D20171570004CFB61 /* Model */,
+				71FF58A92017170F004CFB61 /* Libraries */,
+				71FF58A0201715C5004CFB61 /* Supporting Files */,
+				71FF589E20171575004CFB61 /* Resources */,
 			);
 			path = ProjectBase;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 		71FF58A42017167F004CFB61 /* WaitView */ = {
 			isa = PBXGroup;
 			children = (
+				713F88662069187000CA5E5A /* WaitView.swift */,
 			);
 			path = WaitView;
 			sourceTree = "<group>";
@@ -547,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71541332206237380081C37A /* NetworkConstants.swift in Sources */,
+				713F88672069187000CA5E5A /* WaitView.swift in Sources */,
 				71254399203C50D900194098 /* UserSessionManager.swift in Sources */,
 				71FF58C320171E45004CFB61 /* NetworkCoordinator.swift in Sources */,
 				71315C3B20623F4700D68750 /* ColorConstants.swift in Sources */,
@@ -571,6 +576,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71541333206237380081C37A /* NetworkConstants.swift in Sources */,
+				713F88682069187000CA5E5A /* WaitView.swift in Sources */,
 				7125439A203C50D900194098 /* UserSessionManager.swift in Sources */,
 				71FF58C420171E45004CFB61 /* NetworkCoordinator.swift in Sources */,
 				71315C3C20623F4700D68750 /* ColorConstants.swift in Sources */,
