@@ -17,6 +17,11 @@ class AppDelegateCoordinator: NSObject {
     static let shared = AppDelegateCoordinator()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        if UserSessionManager.shared().isSessionAvailable() {
+            print("Found session for = \(UserSessionManager.shared().session!.username)")
+            showHomeScreen()
+        }
         return true;
     }
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 
-
+let kKeyUsername:String = "username"
 
 
 

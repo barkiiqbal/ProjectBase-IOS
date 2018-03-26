@@ -1,20 +1,19 @@
 //
-//  LoginController.swift
+//  UsersListViewController.swift
 //  ProjectBase
 //
-//  Created by Motivator on 24/01/2018.
+//  Created by Motivator on 26/03/2018.
 //  Copyright © 2018 Motivator. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: BaseViewController {
+class UsersListViewController: UIViewController {
 
     //MARK: - IBOutlet
     
-    @IBOutlet weak var txtPassword: UITextField!
-    @IBOutlet weak var txtUsername: UITextField!
-    @IBOutlet weak var btnLogin: UIButton!
+    @IBOutlet weak var lblUsername: UILabel!
+    @IBOutlet weak var lblToken: UILabel!
     
     
     //MARK: - Controller Lifecycle
@@ -23,7 +22,8 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        designView()
+        lblUsername.text = UserSessionManager.shared().session!.username
+        lblToken.text = UserSessionManager.shared().session!.token ?? "Not Found Error"
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,7 +31,7 @@ class LoginViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+
     /*
     // MARK: - Navigation
 
@@ -43,29 +43,18 @@ class LoginViewController: BaseViewController {
     */
 
     
-    //MARK: - Private
+    // MARK: - IBAction
     
-    private func designView() {
+    @IBAction func logout(_ sender:Any) {
         
-        shouldHideNavigationBar = true
-        view.backgroundColor = AppColor.appBackgroundColor
+        print("logout from Applicaiton")
+        let username = (UserSessionManager.shared().session?.username)!
         
-    }
-    
-    
-    //MARK: - Method
-    
-    
-    //MARK: - IBAction
-    
-    @IBAction func login(_ sender: Any) {
-        UserCoordinator.validateUser(username: txtUsername.text!, password: txtPassword.text!, completion: { (user) in
-            print("response \(user)")
-            showHomeScreen()
+        UserCoordinator.logout(username: username, completion: { (isDeleted) in
             
-        }, failer: { (error) in
-            print("response \(error)")
-        })
+            showLoginScreen()
+        }) {
+            print("error deleting session")
+        }
     }
-    
 }

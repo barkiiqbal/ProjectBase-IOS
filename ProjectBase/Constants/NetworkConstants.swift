@@ -22,7 +22,7 @@ struct APPURL {
     private struct Paths {
         static let auth = "login"
         static let basic = "Basic"
-        static let forgotPassword = "forgotPassword"
+        static let forgotPassword = "login"
         static let changePassword = "changePassword"
     }
     
@@ -45,8 +45,9 @@ struct APPURL {
     }
     
     static func changePassword(email:String, currentPassword:String, newPassword:String) -> String {
-        return (APPURL.BaseURL  + Paths.forgotPassword )
+        return (APPURL.BaseURL  + Paths.changePassword )
     }
+    
     
     //MARK: -
 }
